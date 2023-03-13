@@ -1,4 +1,4 @@
-# vuetheweather
+# VUE The Weather
 
 This is a project built with Vue. It is meant to serve as a learning tool for me and a way to show off my Vue skills. The project is incomplete so check back in often.
 
