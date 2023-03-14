@@ -1,5 +1,7 @@
 <script setup>
 import { useLocationStore } from '@/stores/location'
+import { useWeatherStore } from '@/stores/weather'
+const weatherStore = useWeatherStore()
 const locationStore = useLocationStore()
 </script>
 
@@ -10,7 +12,7 @@ const locationStore = useLocationStore()
     placeholder="enter your zip"
     class="border p-3 rounded-md mt-1"
   />
-  <button class="border ml-2 p-3 rounded-md" @click="locationStore.updateLocation(zipInput)">
+  <button class="border ml-2 p-3 rounded-md" @click="locationStore.updateLocation(zipInput); weatherStore.getWeather(); $emit('toggle')">
     Search
   </button>
 </template>

@@ -14,7 +14,7 @@ locationStore.getLocation()
   <main class="container mx-auto">
     <div v-if="locationStore.locationZip">
       <div class="flex items-center mt-6">
-        <LocationForm v-if="isEditing" />
+        <LocationForm v-if="isEditing" @toggle="toggleEdit" />
         <h1 class="text-3xl font-bold mr-2" v-else>
           7 Day Forcast for <span class="underline">{{ weatherStore.weatherLocation }}</span>
         </h1>
