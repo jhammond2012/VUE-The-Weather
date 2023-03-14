@@ -1,7 +1,7 @@
 <template>
   <div class="overflow-hidden rounded-lg bg-white px-4 py-5 shadow sm:p-6 flex flex-col">
     <div class="truncate text-sm font-medium text-gray-500">{{ formatDate(date) }}</div>
-    <div class="flex items-center justify-between">
+    <div class="flex flex-col text-center items-center justify-between">
       <div
         class="text-xs font-semibold tracking-tight text-gray-900 flex flex-col justify-center items-center"
       >
