@@ -4,10 +4,10 @@ import LocationForm from '@/components/LocationForm.vue'
 
 import { useWeatherStore } from '@/stores/weather'
 import { useLocationStore } from '@/stores/location'
-const weatherStore = useWeatherStore();
-const locationStore = useLocationStore();
-weatherStore.getWeather();
-locationStore.getLocation();
+const weatherStore = useWeatherStore()
+const locationStore = useLocationStore()
+weatherStore.getWeather()
+locationStore.getLocation()
 </script>
 
 <template>
@@ -72,16 +72,16 @@ locationStore.getLocation();
 </template>
 
 <script>
-  export default {
-    data: function () {
-      return {
-        isEditing: false,
-      }
-    },
-    methods: {
-      toggleEdit() {
-        this.isEditing = !this.isEditing;
-      }
+export default {
+  data: function () {
+    return {
+      isEditing: false
+    }
+  },
+  methods: {
+    toggleEdit() {
+      this.isEditing = !this.isEditing
     }
   }
+}
 </script>

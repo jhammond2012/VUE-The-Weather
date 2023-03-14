@@ -1,5 +1,5 @@
 <script setup>
-  import SingleWeatherItem from './SingleWeatherItem.vue';
+import SingleWeatherItem from './SingleWeatherItem.vue'
 </script>
 
 <template>
@@ -19,7 +19,7 @@
 </template>
 
 <script>
-  export default {
-    props: ['weatherData'],
-  }
+export default {
+  props: ['weatherData']
+}
 </script>
