@@ -11,7 +11,7 @@ locationStore.getLocation()
 </script>
 
 <template>
-  <main class="container mx-auto">
+  <main class="container mx-auto px-6">
     <div v-if="locationStore.locationZip">
       <div class="flex items-center mt-6">
         <LocationForm v-if="isEditing" @toggle="toggleEdit" />
